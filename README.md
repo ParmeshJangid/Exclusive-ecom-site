@@ -74,19 +74,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Features
 Responsive Design: Fully responsive across devices (mobile, tablet, desktop).
+
 ReactJS: Built using React, enabling a fast and interactive user interface.
+
 Tailwind CSS: Styled with Tailwind CSS, providing a clean and customizable design.
+
 Product Categories: Organizes products into different categories for easy browsing.
+
 Product Listings: Displays product images, prices, and descriptions.
+
 Dynamic Routing: Allows for easy navigation between product categories and detailed views.
+
 Cart Functionality: Users can add and remove products from their cart (to be integrated in future versions).
+
 User Authentication: Placeholder for user authentication (e.g., login and registration forms).
+
 
 
 ### Technologies Used
 ReactJS: For building the user interface.
+
 Tailwind CSS: A utility-first CSS framework for styling the site.
+
 React Router: For handling dynamic routing between pages.
+
 Axios / Fetch API: For making API calls (e.g., fetching product data).
+
 Redux (optional): For state management (if used in your project).
 
