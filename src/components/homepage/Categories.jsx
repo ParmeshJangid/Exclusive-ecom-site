@@ -6,13 +6,9 @@ import CategoriesLoading from "../../features/loading/CategoriesLoading";
 
 const Categories = () => {
   const dispatch = useDispatch();
-  const { categories, loading , success,fail} = useSelector((state) => state.categories);
+  const { categories, loading } = useSelector((state) => state.categories);
 
   useEffect(() => {
-    console.log("Categories from Redux state(data form categories.jsx ):", categories);
-    console.log("Loading state:", loading);
-    console.log("Success state:", success);
-    console.log("Failure state:", fail);
     dispatch(getCategories());
   }, [dispatch]);
 
@@ -34,9 +30,11 @@ const Categories = () => {
 
         {/* section details */}
         {!loading ? (
-          <CategoriesLoading />
+          <div>
+            <CategoriesElement categories={categories} />
+          </div>
         ) : (
-          <CategoriesElement categories={categories} />
+          <CategoriesLoading />
         )}
       </div>
     </section>
